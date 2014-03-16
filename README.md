@@ -6,6 +6,8 @@ Snort in a Docker Container
 Install
 ============
 
+- Install Docker - http://docs.docker.io/en/latest/installation/ubuntulinux/
+- On the host: sudo apt-get install build-essential checkinstall autoconf bison flex libpcap-dev libpcre3-dev zlib1g-dev libnuma-dev libtool
 - Clone the repo
 - Go to the debs directory and run run.sh to build the deb requirements
 - modprobe pf_ring and/or ensure it starts on startup
