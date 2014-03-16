@@ -49,8 +49,13 @@ build_pfringlib() {
     # Fix a small linker bug
     sed -i 's/-lpthread/-lpthread -lnuma -lrt/' Makefile
     make
+    make install
     checkinstall $CIOPTS --pkgversion=$PFRINGVER --pkgname=pf-ring-lib
     cd $SPWD
+}
+
+build_pfringkern() {
+    echo TODO: See if kernel module is there, if not, build and install it
 }
 
 build_pfringlibpcap() {
@@ -85,6 +90,7 @@ build_libdnet
 build_daq
 build_snort
 build_pfringlib
+build_pfringkern
 ##build_pfringlibpcap  # Not really Needed
 build_pfringdaq
 cleanup
