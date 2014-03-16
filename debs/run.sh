@@ -56,7 +56,15 @@ build_pfringlib() {
 }
 
 build_pfringkern() {
-    echo TODO: See if kernel module is there, if not, build and install it
+    if [ ! -f /lib/modules/$(uname -r)/kernel/net/pf_ring/pf_ring.ko ] 
+    then
+	echo "Building Kernel Module"
+	cd $SPWD/PF_RING*/kernel
+	make
+	make install
+    else
+	echo "Kernel Module Already Exists"
+    fi
 }
 
 build_pfringlibpcap() {
