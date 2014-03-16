@@ -49,6 +49,7 @@ build_pfringlib() {
     # Fix a small linker bug
     sed -i 's/-lpthread/-lpthread -lnuma -lrt/' Makefile
     make
+    # TODO: Not sure I need to install this. I'm actually sure I can just set the lib/binary dir later
     make install
     checkinstall $CIOPTS --pkgversion=$PFRINGVER --pkgname=pf-ring-lib
     cd $SPWD
