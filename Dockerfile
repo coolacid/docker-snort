@@ -6,7 +6,7 @@ RUN echo 'Acquire::http { Proxy "http://10.0.10.10:8000"; };' > /etc/apt/apt.con
 
 RUN apt-get update
 
-RUN apt-get -y install iptables libnetfilter-queue1 libpcap0.8 libnet1 libnuma1
+RUN apt-get -y install wget iptables libnetfilter-queue1 libpcap0.8 libnet1 libnuma1
 
 # Install from locally generated .deb files
 ADD debs /root/
@@ -17,3 +17,4 @@ RUN cd /usr/local/lib && ln -s libdnet.1 libdnet.so.1
 RUN ldconfig
 ADD run.sh /
 ADD apps /root/apps/
+ADD rules /root/rules/
