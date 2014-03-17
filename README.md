@@ -21,4 +21,11 @@ Todo
 - Get configs out, and actually run snort as a service
 - Ensure signatures actually update
 
+See More
+========
+
+snort - http://www.snort.org/
+pf_ring - http://www.ntop.org/products/pf_ring/ ( http://sourceforge.net/projects/ntop/files/PF_RING/ )
+pf_ring Fork - https://github.com/xtao/PF_RING
+
 Tip Jar: https://gist.github.com/coolacid/9537573
