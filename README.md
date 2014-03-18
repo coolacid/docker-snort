@@ -17,8 +17,7 @@ Install
 Todo
 ====
 
-- Should probably have a switch to only make the debs so it can be installed on other hosts
-- Ensure signatures actually update regularly
+- Have signatures update regularly. One could do this by restarting the docker container. Not sure the best way to handle this yet.
 
 See More
 ========

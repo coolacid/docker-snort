@@ -30,7 +30,7 @@ build_snort() {
     wget http://www.snort.org/downloads/2787 -O snort.tar.gz
     tar xvfvz snort.tar.gz
     cd snort*
-    ./configure
+    ./configure -enable-reload
     make
     checkinstall $CIOPTS
     cd $SPWD
