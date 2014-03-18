@@ -18,8 +18,7 @@ Todo
 ====
 
 - Should probably have a switch to only make the debs so it can be installed on other hosts
-- Get configs out, and actually run snort as a service
-- Ensure signatures actually update
+- Ensure signatures actually update regularly
 
 See More
 ========

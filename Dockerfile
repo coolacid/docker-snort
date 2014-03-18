@@ -18,3 +18,5 @@ RUN ldconfig
 ADD run.sh /
 ADD apps /root/apps/
 ADD rules /root/rules/
+
+# ENTRYPOINT ["/root/apps/run.sh"]
