@@ -19,6 +19,7 @@ Todo
 
 - Have signatures update regularly. One could do this by restarting the docker container. Not sure the best way to handle this yet.
 - Use -v (Create a bind mount to a directory or file with: [host-path]:[container-path]:[rw|ro]) for log locations?
+- Support PF_RING cluster mode
 
 See More
 ========
