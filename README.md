@@ -11,7 +11,8 @@ Install
 - Clone the repo
 - Go to the debs directory and run run.sh to build the deb requirements
 - modprobe pf_ring and/or ensure it starts on startup
-- make sure the eth1 (recommended) is up
+- make sure the eth1 (recommended) on the host is up
+- configure the container by editing config.sh
 - If everything works out correctly, you should be able to run the test.sh script and run snort using the /run.sh file
 
 Todo
