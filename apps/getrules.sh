@@ -12,6 +12,7 @@ if [ -n "$CUSTOMRULES" ]; then
 	mkdir -p "$BASEDIR"
     fi
     tar xvfvz snortrules.tar.gz -C $BASEDIR
+    rm snortrules.tar.gz
 elif [ -z "$OINKCODE" ]; then
     # If Oinkcode is blank, just download the community rules
     #wget https://s3.amazonaws.com/snort-org/www/rules/community/community-rules.tar.gz -O community-rules.tar.gz
@@ -28,4 +29,5 @@ else
 	mkdir -p "$BASEDIR"
     fi
     tar xvfvz snortrules-snapshot-$SNORTVER.tar.gz -C $BASEDIR
+    rm snortrules-snapshot-$SNORTVER.tar.gz
 fi

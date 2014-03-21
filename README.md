@@ -15,11 +15,16 @@ Install
 - configure the container by editing config.sh
 - If everything works out correctly, you should be able to run the test.sh script and run snort using the /run.sh file
 
+Notes
+=====
+
+- Snort rules update every 6 hours by default - see apps/updatesnort.py
+
 Todo
 ====
 
-- Have signatures update regularly. One could do this by restarting the docker container. Not sure the best way to handle this yet.
 - Support PF_RING cluster mode
+- Should probably set the update time in config.sh
 
 See More
 ========
